@@ -1,0 +1,130 @@
+body{
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  height:1440px;
+  Font-size: 18px
+
+}
+.nft-card{
+  display:flex;
+  flex-direction:column;
+  height: 590px;
+  width:299px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  margin:0px;
+
+}
+.img{
+  margin-bottom: 0px;
+}
+.img img{
+  max-width:275px;
+  margin:12px;
+  height: auto;
+  display:block;
+  border-radius: 10px;
+  margin-bottom: 0px;
+
+}
+
+.card-title{
+  color:white;
+  margin-left:20px;
+  margin-top: 10px;
+  margin-right:9px;
+  margin-bottom: 0px;
+  display:inline;
+}
+.card-title p{
+  color:rgba(255, 255, 255, 0.298);
+}
+.content-description{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0px 20px;  
+
+}
+.right{
+  color:rgba(255, 255, 255, 0.35);  
+}
+.eth{
+  display: flex;
+  justify-content: center;
+}
+.content-description img{
+  margin-top:19px;
+  margin-right: 5px;
+  width:auto;
+  height:17px;
+}
+.content-description span{
+  color:aqua;
+}
+.time{
+  display:flex;
+  justify-content: center;
+}
+.deisgner-description{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0px;
+}
+.deisgner-description img{
+  margin-top:0px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-left: 20px;
+  padding-left: 0px;
+  width:auto;
+  height:36px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.deisgner-description p {
+  margin-left: 10px;
+  color:aliceblue;
+}
+.deisgner-description p span{
+color:rgba(255, 255, 255, 0.35);}
+hr{
+  border: none;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  margin: 20px 23px;
+}
+
+.img {
+  position: relative; /* Ensures the overlay is positioned relative to this container */
+  
+}
+
+
+.overlay {
+  position: absolute; /* Positions the overlay absolutely within the container */
+  top: 0;
+  left: 13px;
+  top:15px;
+  width: 275px;
+  height: 273px;
+  background-color: rgba(0, 255, 255, 0.5); /* Semi-transparent overlay color */
+  border-radius: 10px; /* Matches the border radius of the image */
+  display: flex; /* Uses Flexbox to center the icon */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  opacity: 0; /* Initially hides the overlay */
+  transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.view-icon {
+  width: 50px; /* Sets the size of the view icon */
+  height: 50px;
+}
+
+.img:hover .overlay {
+  opacity: 1; /* Shows the overlay on hover */
+}
